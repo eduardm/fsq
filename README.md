@@ -1,0 +1,4 @@
+fsq
+===
+
+FoursquareAuthenticate Grails plugin
