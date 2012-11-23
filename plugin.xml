@@ -1,0 +1,31 @@
+<plugin name='foursquare-authenticate' version='0.5' grailsVersion='2.0 &gt; *'>
+  <author>Eduard Martini</author>
+  <title>Foursquare Authenticate Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/foursquare-authenticate</documentation>
+  <type>FoursquareAuthenticateGrailsPlugin</type>
+  <resources>
+    <resource>foursquare.authenticate.FoursquareAuthenticationService</resource>
+    <resource>foursquare.authentication.FsqTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <runtime>
+      <dependency group='com.github.groovy-wslite' name='groovy-wslite' version='0.7.1' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <build>
+      <plugin group='org.grails.plugins' name='jquery' version='1.7.2' />
+    </build>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
