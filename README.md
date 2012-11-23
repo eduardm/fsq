@@ -34,7 +34,7 @@ grails.project.dependency.resolution = {
 		}
 		plugins {
 				//here go your plugin dependencies
-				runtime ':foursquare-authenticate:0.4'
+				runtime ':foursquare-authenticate:0.5'
 		}
 }
 ```
@@ -68,6 +68,7 @@ Project documentation is located here :
 
 # Latest releases
 
+* 2012-11-23 **V0.5** : Updated documentation
 * 2012-11-23 **V0.4** : First public release
 * 2012-11-20 **V0.3** : Non public release
 * 2012-11-3 **V0.2** : Non public release
