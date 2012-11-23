@@ -64,7 +64,7 @@ If you want to quickly run the plugin on a demo app, you can download [Foursquar
 
 Project documentation is located here :
 
-* [Reference Documentation](https://github.com/eduardm/fsq/wiki)
+* [Reference Documentation](https://github.com/eduardm/fsq/wiki/Foursquare-Authenticate-Grails-plugin)
 
 # Latest releases
 
