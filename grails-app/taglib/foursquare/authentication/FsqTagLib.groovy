@@ -1,12 +1,14 @@
 package foursquare.authentication
+
 class FsqTagLib {
+
     static namespace = "fsq"
 
     /**
      * Initialize Foursquare JS SDK
      * No attributes
      */
-    def init = {
+    def init = { attrs ->
         out << render(template: "/foursquare.authenticate/initJs", plugin: "foursquare-authenticate")
     }
 
@@ -16,7 +18,7 @@ class FsqTagLib {
      * @attr onSuccess - javascript function that will be called when the OAuth token is retrieved with success
      * @attr onFailure - javascript function that will be called when the OAuth token is not retrieved (user denies, connection problem, etc)
      */
-    def fsqLoginEvent = {attrs ->
+    def fsqLoginEvent = { attrs ->
         if (attrs["elementId"]) {
             out << render(template: "/foursquare.authenticate/authenticate", model: [elementId: attrs["elementId"], onSuccess: attrs["onSuccess"], onFailure: attrs["onFailure"]],
                     plugin: "foursquare-authenticate")
@@ -27,7 +29,7 @@ class FsqTagLib {
      * Should be included on the page where Foursquare redirects after authorize
      * @attr status Can be "success" or "failed" based on the obtaining or not the oauth token
      */
-    def fsqHandleCallback = {attrs ->
+    def fsqHandleCallback = { attrs ->
         out << render(template: "/foursquare.authenticate/callback", model: [status: attrs["status"]], plugin: "foursquare-authenticate")
     }
 }
