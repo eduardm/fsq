@@ -10,7 +10,7 @@ The [Foursquare Platform](https://developer.foursquare.com) is a set of APIs tha
 
 This project contains the open source **Grails Foursquare Authenticate Plugin** that allows you to integrate the Foursquare Authenticate on a website/app powered by [Grails](http://grails.org).
 
-I created this plugin because there are several plugins that handles the Foursquare API already, but none of them are taking care of the OAuth token aquisition.
+I created this plugin because there are several plugins that handles the Foursquare API already, but none of them are taking care of the OAuth token acquisition.
 
 **Grails Foursquare Plugin** provides the following Grails artefacts:
 
